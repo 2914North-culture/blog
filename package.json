@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "博客项目",
+  "main": "server.js",
+  "bin": {
+    "blog": "server.js"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nodemon ./bin/server.js",
+    "pro": "cross-env NODE_ENV=pro pm2 ./bin/server.js"
+  },
+  "keywords": [],
+  "author": "yjt",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2"
+  }
+}
